@@ -24,7 +24,7 @@ async def watch_symbol(api: PocketOptionAsync, symbol: str):
     """Subscribe to a symbol and keep updating its latest price."""
     stream = await api.subscribe_symbol(symbol)
     async for candle in stream:
-        latest_price[symbol] = candle["close"]
+        latest_price[symbol] = float(candle["close"])
 
 
 async def trade_loop(api: PocketOptionAsync):
