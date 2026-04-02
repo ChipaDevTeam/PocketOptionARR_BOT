@@ -6,7 +6,7 @@ import asyncio
 SSID = ""  # Will be prompted if empty
 REAL_ASSET = "EURUSD"
 OTC_ASSET = "EURUSD_otc"
-GAP_THRESHOLD = 0.00150        # Minimum price gap to trigger a trade
+GAP_THRESHOLD = 0.00130        # Minimum price gap to trigger a trade
 TRADE_AMOUNT = 1.0           # Trade amount in $
 TRADE_DURATION = 60          # Trade duration in seconds (1 min)
 COOLDOWN_SECONDS = 60        # Cooldown between trades to avoid rapid fire
