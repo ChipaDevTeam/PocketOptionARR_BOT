@@ -122,7 +122,7 @@ async def report_result(api: PocketOptionAsync, trade_id: str, direction: str, g
 
 
 async def main(ssid: str):
-    start_logs(".", LOG_LEVEL, terminal=True)
+    # start_logs(".", LOG_LEVEL, terminal=True)
 
     api = PocketOptionAsync(ssid)
     await asyncio.sleep(5)  # Let the connection establish
